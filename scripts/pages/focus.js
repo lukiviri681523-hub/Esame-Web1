@@ -15,6 +15,7 @@ const threadRoot = document.querySelector("#thread-root");
 
 function updateSavedButton(story, button) {
     const isSaved = toggleReadLater(story.id);
+    console.log("non funziona")
 
     if (button) {
         button.textContent = isSaved ? "Salvata" : "Salva";

@@ -49,7 +49,7 @@ export function getReadLaterIds() {
  *
  * @param {number|string} id - ID dell'item
  * @returns {boolean}
- */
+*/
 export function isReadLater(id) {
     const itemId = Number(id);
     const isReadLater = readStoredIds().includes(itemId);
@@ -61,7 +61,7 @@ export function isReadLater(id) {
  *
  * @param {number|string} id - ID dell'item
  * @returns {boolean}
- */
+*/
 export function addReadLater(id) {
     const itemId = Number(id);
 
@@ -103,9 +103,9 @@ export function toggleReadLater(id) {
         removeReadLater(id);
         return false;
     }
-
     addReadLater(id);
     return true;
+    
 }
 
 /**

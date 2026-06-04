@@ -57,7 +57,7 @@ function updateArchiveButton(story, button) {
 
     if (button) {
         button.textContent = isSaved ? "Salvata" : "Salva";
-        button.classList.toggle("is-saved", isSaved);
+        button.classList.toggle("is-saved",isSaved );
     }
 }
 
