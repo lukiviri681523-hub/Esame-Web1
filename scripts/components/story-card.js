@@ -73,11 +73,11 @@ export function createStoryCard({
     // per il tipo di dato (es. scoreLabel -> chip--score, commentsLabel -> chip--comments, timeLabel -> chip--time, authorLink -> chip--author).
     // Infine manca il link alla fonte (sourceLink) da inserire dentro il div story-card__footer, prima del footnote con l'ID della storia.
     card.innerHTML = `
-        <div class="story-card__top">
-            <div class="story-card__heading">
-                <p class="story-card__eyebrow">#${sanitizeHTML(story.id)}</p>
-                <h3 class="story-card__title"></h3>
-            </div>
+    <div class="story-card__top">
+    <div class="story-card__heading">
+    <p class="story-card__eyebrow">#${sanitizeHTML(story.id)}</p>
+    <h3 class="story-card__title"><a href="${threadHref}">${title}</a></h3>
+    </div>
             ${actions}
         </div>
 
