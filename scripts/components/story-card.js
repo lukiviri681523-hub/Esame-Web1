@@ -82,12 +82,16 @@ export function createStoryCard({
         </div>
 
         <div class="story-card__meta">
-
+        <span class"chip chip--score">${scoreLabel}</span>
+        <span class"chip chip--comments">${commentsLabel}</span>
+        <span class"chip chip--time">${timeLabel}</span>
+        <span class"chip chip--author">${authorLink}</span>
+    
         </div>
 
         <p class="story-card__excerpt">${excerpt}</p>
         <div class="story-card__footer">
-
+<a href="${sourceLink}"></a>
             <span class="story-card__footnote">ID ${sanitizeHTML(story.id)}</span>
         </div>
     `;
